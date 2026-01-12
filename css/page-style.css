@@ -1,0 +1,9 @@
+  .grid-container{
+display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+*{
+    padding:10px !important;
+}

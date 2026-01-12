@@ -1,3 +1,16 @@
+<?php   
+    include_once('dbFunction.php');  
+    if(isset($_POST['logout'])){  
+        // remove all session variables  
+        session_unset();   
+  
+        // destroy the session   
+        session_destroy();  
+    }  
+     if(!($_SESSION)){  
+        header("Location:login.php");  
+    }   
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,13 +33,13 @@
 
       <div class="navbar__nav__items">
         <div class="nav__item">
-          <button class="signin__button">Home</button>
+          <button href="video.php" class="signin__button">Home</button>
         </div>
           <div class="nav__item">
-          <button class="signin__button">Sign up</button>
+          <button href="register.php" class="signin__button">Sign up</button>
         </div>
         <div class="nav__item">
-          <button class="signin__button">Sign in</button>
+          <button href="login.php" class="signin__button">Log in</button>
         </div>
       </div>
     </nav>
