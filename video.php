@@ -20,17 +20,11 @@
 
       <div class="navbar__nav__items">
         <div class="nav__item">
-          <div class="dropdown__container">
-            <i class="fas fa-globe"></i>
-            <select name="languages" id="languages_Select" class="language__drop__down">
-              <option value="english" selected>English</option>
-              <option value="hindi" >hindi</option>
-              <option value="hindi" >Urdu</option>
-              <option value="hindi" >Turkey</option>
-            </select>
-          </div>
+          <button class="signin__button">Home</button>
         </div>
-
+          <div class="nav__item">
+          <button class="signin__button">Sign up</button>
+        </div>
         <div class="nav__item">
           <button class="signin__button">Sign in</button>
         </div>
