@@ -28,13 +28,13 @@ include 'generalrun.php'
 
       <div class="navbar__nav__items">
         <div class="nav__item">
-          <button class="signin__button">Home</button>
+          <button onclick="window.location.href='video.php'" class="signin__button">Home</button>
         </div>
           <div class="nav__item">
-          <button class="signin__button">Sign up</button>
+          <button onclick="window.location.href='register.php'" class="signin__button">Sign up</button>
         </div>
         <div class="nav__item">
-          <button class="signin__button">Log in</button>
+          <button onclick="window.location.href='login.php'" class="signin__button">Log in</button>
         </div>
       </div>
     </nav>

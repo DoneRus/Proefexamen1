@@ -6,10 +6,15 @@
   
         // destroy the session   
         session_destroy();  
-    }  
-     if(!($_SESSION)){  
-        header("Location:login.php");  
-    }   
+    } ;
+     //if(!($_SESSION)){  
+       // header("Location:login.php");  
+   // }   
+   if (($_SESSION)){
+    echo "there is a session here";
+   };
+
+   
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,14 +38,19 @@
 
       <div class="navbar__nav__items">
         <div class="nav__item">
-          <button href="video.php" class="signin__button">Home</button>
+          <button onclick="window.location.href='video.php'" class="signin__button">Home</button>
         </div>
           <div class="nav__item">
-          <button href="register.php" class="signin__button">Sign up</button>
+          <button onclick="window.location.href='register.php'" class="signin__button">Sign up</button>
         </div>
         <div class="nav__item">
-          <button href="login.php" class="signin__button">Log in</button>
+          <button onclick="window.location.href='login.php'" class="signin__button">Log in</button>
         </div>
+        <?php if (isset($_SESSION)){
+          echo "<div class='nav__item'>
+          <input class='signin__button' type='submit' name='welcome' value='logout' />   
+        </div>";
+        }; ?>
       </div>
     </nav>
   </header>
