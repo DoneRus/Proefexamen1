@@ -7,7 +7,9 @@
         // destroy the session   
         session_destroy();  
     } ;
-    
+            if(($_SESSION)){  
+            header("Location:home.php");  
+        }  
    if (($_SESSION)){
     echo "there is a session here";
    };

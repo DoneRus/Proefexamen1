@@ -9,7 +9,7 @@
     $user = $funObj->Login($emailid, $password);
 
     if ($user) {
-        header("Location: video.php");
+        header("Location: home.php");
         exit;
     } else {
         echo "<script>alert('Emailid / Password Not Match')</script>";
